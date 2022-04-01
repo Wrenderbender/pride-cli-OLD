@@ -7,7 +7,7 @@ use terminal_size::terminal_size;
 fn main(){
     let mut count:usize = 17; //default char width
     let args: Vec<String> = env::args().collect();
-    let mut opts = getopt::Parser::new(&args,"C:Flgbtaq");
+    let mut opts = getopt::Parser::new(&args,"C:Flgbtaqp");
     let twidth = terminal_size().unwrap().0.0;
     loop {
         match opts.next().transpose().unwrap() {
@@ -15,20 +15,20 @@ fn main(){
             Some(opt) => match opt{
                 Opt('C', Some(arg)) => count = arg.trim().parse().unwrap(),
                 Opt('F', None) => count = twidth as usize, 
-                Opt('l', None) => lesbianflag(count),
-                Opt('g', None) => gayflag(count),
-                Opt('b', None) => biflag(count),
-                Opt('t', None) => transflag(count),
-                Opt('a', None) => aceflag(count),
-                Opt('p', None) => prideflag(count),
-                Opt('q', None) => queerflag(count),
+                Opt('l', None) => lesbian_flag(count),
+                Opt('g', None) => gay_flag(count),
+                Opt('b', None) => bi_flag(count),
+                Opt('t', None) => trans_flag(count),
+                Opt('a', None) => ace_flag(count),
+                Opt('p', None) => pride_flag(count),
+                Opt('q', None) => queer_flag(count),
                 _ => println!("option {} was not found, if you would like this flag to be added consider raising a github issue, please note I can only so many flags until there are no characters left.", opt)
             }
         }
     }
 }
 
-fn lesbianflag(count:usize){//18
+fn lesbian_flag(count:usize){//18
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count);
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -48,7 +48,7 @@ fn lesbianflag(count:usize){//18
     writeln!(&mut stdout, "{}",outstr).unwrap();
 }
 
-fn gayflag(count:usize){
+fn gay_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count); 
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -68,7 +68,7 @@ fn gayflag(count:usize){
     writeln!(&mut stdout, "{}",outstr).unwrap();
 }
 
-fn biflag(count:usize){
+fn bi_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count);
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -83,7 +83,7 @@ fn biflag(count:usize){
 
 }
 
-fn transflag(count:usize){
+fn trans_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count);   
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -99,7 +99,7 @@ fn transflag(count:usize){
     writeln!(&mut stdout, "{}",outstr).unwrap();
 }
 
-fn prideflag(count:usize){
+fn pride_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count); 
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -117,7 +117,7 @@ fn prideflag(count:usize){
     writeln!(&mut stdout, "{}",outstr).unwrap();
 }
 
-fn aceflag(count:usize){
+fn ace_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count); 
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
@@ -131,7 +131,7 @@ fn aceflag(count:usize){
     writeln!(&mut stdout, "{}",outstr).unwrap();
 }
 
-fn queerflag(count:usize){
+fn queer_flag(count:usize){
     let outchar: &str = "█";//yes I know its technically a str but dont care + didn't ask + ratio + i have your ip(127.0.0.1) 
     let outstr = outchar.repeat(count); 
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
