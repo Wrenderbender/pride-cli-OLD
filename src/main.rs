@@ -7,7 +7,7 @@ use terminal_size::terminal_size;
 fn main(){
     let mut count:usize = 17; //default char width
     let args: Vec<String> = env::args().collect();
-    let mut opts = getopt::Parser::new(&args,"C:Flgbtaqp");
+    let mut opts = getopt::Parser::new(&args,"C:Flgbtaqpn");
     let twidth = terminal_size().unwrap().0.0;
     loop {
         match opts.next().transpose().unwrap() {
@@ -22,6 +22,7 @@ fn main(){
                 Opt('a', None) => ace_flag(count),
                 Opt('p', None) => pride_flag(count),
                 Opt('q', None) => queer_flag(count),
+                Opt('n', None) => non_binary_flag(count),
                 _ => println!("option {} was not found, if you would like this flag to be added consider raising a github issue, please note I can only so many flags until there are no characters left.", opt)
             }
         }
@@ -142,4 +143,18 @@ fn queer_flag(count:usize){
     stdout.set_color(ColorSpec::new().set_fg(Some(Color::Rgb(74,129,35)))).unwrap();
     writeln!(&mut stdout, "{}",outstr).unwrap();
    
+}
+
+fn non_binary_flag(count: usize) {
+    let outchar: &str = "█";
+    let outstr = outchar.repeat(count);
+    let mut stdout = StandardStream::stdout(ColorChoice::Always);
+    stdout.set_color(ColorSpec::new().set_fg(Some(Color::Rgb(255,244,48)))).unwrap();
+    writeln!(&mut stdout, "{}",outstr).unwrap();
+    stdout.set_color(ColorSpec::new().set_fg(Some(Color::Rgb(255, 255, 255)))).unwrap();
+    writeln!(&mut stdout, "{}",outstr).unwrap();
+    stdout.set_color(ColorSpec::new().set_fg(Some(Color::Rgb(156, 89, 209)))).unwrap();
+    writeln!(&mut stdout, "{}",outstr).unwrap();
+    stdout.set_color(ColorSpec::new().set_fg(Some(Color::Rgb(0,0,0)))).unwrap();
+    writeln!(&mut stdout, "{}",outstr).unwrap();
 }

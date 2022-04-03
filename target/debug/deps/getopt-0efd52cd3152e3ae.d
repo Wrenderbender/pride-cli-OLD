@@ -1,0 +1,13 @@
+/home/pam/coding/contributing/pride-cli/target/debug/deps/getopt-0efd52cd3152e3ae.rmeta: /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/lib.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/error.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/errorkind.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/opt.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/parser.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/result.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/../README.md
+
+/home/pam/coding/contributing/pride-cli/target/debug/deps/libgetopt-0efd52cd3152e3ae.rlib: /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/lib.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/error.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/errorkind.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/opt.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/parser.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/result.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/../README.md
+
+/home/pam/coding/contributing/pride-cli/target/debug/deps/getopt-0efd52cd3152e3ae.d: /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/lib.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/error.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/errorkind.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/opt.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/parser.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/result.rs /home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/../README.md
+
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/lib.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/error.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/errorkind.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/opt.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/parser.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/result.rs:
+/home/pam/.cargo/registry/src/github.com-1ecc6299db9ec823/getopt-1.1.3/src/../README.md:
